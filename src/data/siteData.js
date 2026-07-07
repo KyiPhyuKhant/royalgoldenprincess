@@ -230,22 +230,22 @@ export const phones = [
 
 export const socialLinks = [
   {
-    label: 'Facebook 1',
+    label: '',
     icon: 'facebook',
     href: 'https://www.facebook.com/share/1BRK3oTo2w/?mibextid=wwXIfr',
   },
   {
-    label: 'Facebook 2',
+    label: '',
     icon: 'facebook',
     href: 'https://www.facebook.com/share/198tBqCACa/?mibextid=wwXIfr',
   },
   {
-    label: 'TikTok',
+    label: '',
     icon: 'tiktok',
     href: 'https://www.tiktok.com/@royalgoldenprincesss?_r=1&_t=ZS-97pedxXaIcy',
   },
   {
-    label: 'Instagram',
+    label: '',
     icon: 'instagram',
     href: 'https://www.instagram.com/golden_princess_jewellery/',
   },

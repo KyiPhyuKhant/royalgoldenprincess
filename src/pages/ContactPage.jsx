@@ -6,7 +6,6 @@ function ContactPage() {
     <section className="page-section contact">
       <div className="section-heading">
         <p className="section-kicker">Visit Us</p>
-        <h1>Contact Royal Golden Princess</h1>
         <p>Better yet, see us in person.</p>
       </div>
 
@@ -25,34 +24,10 @@ function ContactPage() {
           <h2>တော်ဝင်ရွှေမင်းသမီးရဲ့ ဆိုင်ခွဲအမှတ် (2)</h2>
           <p>Time City Jewelry Mall၊ တတိယထပ် (Level 3)၊ အခန်းအမှတ် (C-302)</p>
         </article>
-
-        <article className="contact-card phone-card">
-          <span className="contact-label">Orders & Questions</span>
-          <h2>အသေးစိတ်စုံစမ်းရန်နှင့် အော်ဒါတင်ရန် ဖုန်းများ</h2>
-          <div className="phone-list">
-            {phones.map((phone) => (
-              <a key={phone} href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
-            ))}
-          </div>
-        </article>
-
-        <article className="contact-card hours-card">
-          <span className="contact-label">Hours</span>
-          <h2>Royal Golden Princess</h2>
-          <p>Open daily 09:00 am - 05:00 pm</p>
-        </article>
-
-        <article className="contact-card social-card">
-          <span className="contact-label">Social Media</span>
-          <h2>Follow Royal Golden Princess</h2>
-          <SocialLinks />
-        </article>
       </div>
-
       <div className="map-section">
         <div className="section-heading">
-          <p className="section-kicker">Find Us</p>
-          <h2>Branch Locations</h2>
+          
         </div>
 
         <div className="map-grid">
@@ -73,6 +48,31 @@ function ContactPage() {
           ))}
         </div>
       </div>
+      <div className="">
+        <article className="contact-card phone-card">
+          <span className="contact-label">Orders & Questions</span>
+          <h2>အသေးစိတ်စုံစမ်းရန်နှင့် အော်ဒါတင်ရန် ဖုန်းများ</h2>
+          <div className="phone-list">
+            {phones.map((phone) => (
+              <a key={phone} href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
+            ))}
+          </div>
+        </article>
+
+        <article className="contact-card hours-card">
+          <span className="contact-label">Hours</span>
+          <h2>Royal Golden Princess</h2>
+          <p>Open daily 09:00 am - 05:00 pm</p>
+        </article>
+
+        {/* <article className="contact-card social-card">
+          <span className="contact-label">Social Media</span>
+          <h2>Follow Royal Golden Princess</h2>
+          <SocialLinks />
+        </article> */}
+      </div>
+
+      
     </section>
   );
 }

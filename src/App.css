@@ -615,7 +615,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1180px;
+  max-width: 100%;
 }
 
 .team-card {
@@ -689,7 +689,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1180px;
+  max-width: 100%;
 }
 
 .collection-card {
@@ -764,7 +764,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1180px;
+  max-width: 100%;
 }
 
 .related-gallery-grid figure {
@@ -805,7 +805,7 @@ body {
 }
 
 .gallery-grid {
-  max-width: 1180px;
+  max-width: 100%;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -847,16 +847,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1180px;
+  max-width: 100%;
 }
 
 .contact-card {
   min-height: 210px;
   padding: 28px;
   border-radius: 8px;
-  background: #ffffff;
+  /* background: #ffffff;
   border: 1px solid #f0dfb7;
-  box-shadow: 0 16px 36px rgba(86, 66, 38, 0.09);
+  box-shadow: 0 16px 36px rgba(86, 66, 38, 0.09); */
 }
 
 .contact-card h2,
@@ -869,7 +869,7 @@ body {
 }
 
 .phone-card {
-  background: linear-gradient(135deg, #fff5dc, #f6d78e);
+  /* background: linear-gradient(135deg, #fff5dc, #f6d78e); */
 }
 
 .phone-card h3,
@@ -879,7 +879,7 @@ body {
 }
 
 .hours-card {
-  background: #fff3d9;
+  /* background: #fff3d9; */
 }
 
 .phone-list {
@@ -946,14 +946,14 @@ body {
 }
 
 .map-section {
-  margin-top: clamp(34px, 6vw, 64px);
+  /* margin-top: clamp(34px, 6vw, 64px); */
 }
 
 .map-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1180px;
+  max-width: 100%;
 }
 
 .map-card {

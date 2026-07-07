@@ -26,10 +26,9 @@ function AboutPage({ navigate }) {
       <section className="page-section team-section">
         <div className="section-heading">
           <p className="section-kicker">Our People</p>
-          <h2>Boss and staff</h2>
+          {/* <h2>Boss and staff</h2> */}
           <p>
-            Meet the team behind Royal Golden Princess. Replace these images with
-            real boss and staff photos when they are ready.
+            Meet the team behind Royal Golden Princess. 
           </p>
         </div>
 
