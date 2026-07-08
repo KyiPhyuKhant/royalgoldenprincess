@@ -1,5 +1,6 @@
 import HomeSlider from '../components/HomeSlider';
 import LinkButton from '../components/LinkButton';
+import ReviewSlider from '../components/ReviewSlider';
 import { newArrivals, shopCategories } from '../data/siteData';
 
 function HomePage({ navigate }) {
@@ -71,6 +72,8 @@ function HomePage({ navigate }) {
           ))}
         </div>
       </section>
+
+      <ReviewSlider />
     </main>
   );
 }

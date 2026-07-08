@@ -329,6 +329,37 @@ export const shopCategories = [
   },
 ];
 
+export const customerReviews = [
+  {
+    name: 'Daw Thandar',
+    occasion: 'Wedding gold set',
+    quote:
+      'The team helped us compare gold sets patiently and explained every detail clearly. The final choice felt elegant and perfect for our family ceremony.',
+    image: '/images/gold-set-1.jpg',
+  },
+  {
+    name: 'Ma Ei Mon',
+    occasion: 'Ruby gift selection',
+    quote:
+      'I wanted a meaningful gift and Royal Golden Princess guided me to a ruby piece with the right color and style. The service felt warm and trustworthy.',
+    image: '/images/Ruby-3.jpg',
+  },
+  {
+    name: 'Ko Aung Myint',
+    occasion: 'Ring and sizing support',
+    quote:
+      'The showroom staff made sizing and design comparison simple. I appreciated the calm advice and the polished jewelry presentation.',
+    image: '/images/Ring-3.jpg',
+  },
+  {
+    name: 'Daw May Zin',
+    occasion: 'Gemstone visit',
+    quote:
+      'The gemstone collection was bright and beautiful. I could compare sapphire and emerald pieces comfortably before choosing.',
+    image: '/images/Sapphire-4.jpg',
+  },
+];
+
 export const blogPosts = [
   {
     id: 'ruby-gold-occasion-style',
