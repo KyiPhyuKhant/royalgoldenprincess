@@ -6,10 +6,26 @@ export const collections = [
     description: 'Coordinated gold pieces for weddings, ceremonies, and special gifts.',
     image: '/images/gold-set-1.jpg',
     relatedImages: [
-      '/images/gold-set-1.jpg',
-      '/images/gold-set-2.jpg',
-      '/images/gold-set-3.jpg',
-      '/images/gold-set-4.jpg',
+      {
+        src: '/images/gold-set-1.jpg',
+        title: 'Classic Ceremony Gold Set',
+        detail: 'Balanced gold set suited for weddings, blessings, and formal gifts.',
+      },
+      {
+        src: '/images/gold-set-2.jpg',
+        title: 'Layered Gold Necklace Set',
+        detail: 'Elegant layered design with a polished finish for special occasions.',
+      },
+      {
+        src: '/images/gold-set-3.jpg',
+        title: 'Royal Occasion Gold Set',
+        detail: 'Statement gold styling for customers who prefer a richer showroom look.',
+      },
+      {
+        src: '/images/gold-set-4.jpg',
+        title: 'Daily Grace Gold Set',
+        detail: 'Refined gold arrangement with a softer style for frequent wear.',
+      },
     ],
   },
   {
@@ -19,11 +35,26 @@ export const collections = [
     description: 'Elegant earring styles for everyday wear, gifts, and special occasions.',
     image: '/images/earing-1.jpg',
     relatedImages: [
-      '/images/earing-1.jpg',
-      '/images/earing-2.jpg',
-      '/images/earing-3.jpg',
-      '/images/earing-4.jpg',
-      '/images/earing-5.jpg',
+      {
+        src: '/images/earing-1.jpg',
+        title: 'Pearl Accent Earrings',
+        detail: 'Soft pearl-inspired detail with a graceful gold frame.',
+      },
+      {
+        src: '/images/earing-2.jpg',
+        title: 'Modern Gold Earrings',
+        detail: 'Clean earring shape for customers who prefer simple elegance.',
+      },
+      {
+        src: '/images/earing-3.jpg',
+        title: 'Gift Ready Earrings',
+        detail: 'Bright pair with polished accents, suitable for meaningful gifting.',
+      },
+      {
+        src: '/images/earing-4.jpg',
+        title: 'Event Wear Earrings',
+        detail: 'Dressier earring style for parties, ceremonies, and formal outfits.',
+      },
     ],
   },
   {
@@ -33,14 +64,26 @@ export const collections = [
     description: 'Detailed rings, bangles, and bracelets crafted for lasting wear.',
     image: '/images/Ring-1.jpg',
     relatedImages: [
-      '/images/Ring-1.jpg',
-      '/images/Ring-2.jpg',
-      '/images/Ring-3.jpg',
-      '/images/Ring-4.jpg',
-      '/images/Ring-5.jpg',
-      '/images/Ring-6.jpg',
-      '/images/Ring-7.jpg',
-      '/images/Ring-8.jpg',
+      {
+        src: '/images/Ring-1.jpg',
+        title: 'Signature Gold Ring',
+        detail: 'Classic ring profile with a polished showroom finish.',
+      },
+      {
+        src: '/images/Ring-2.jpg',
+        title: 'Minimal Gold Ring',
+        detail: 'Simple and refined design for everyday wear.',
+      },
+      {
+        src: '/images/Ring-3.jpg',
+        title: 'Statement Ring',
+        detail: 'Bolder ring style for customers who want a standout piece.',
+      },
+      {
+        src: '/images/Ring-4.jpg',
+        title: 'Soft Curve Ring',
+        detail: 'Rounded detail with a comfortable shape and elegant shine.',
+      },
     ],
   },
   {
@@ -50,10 +93,26 @@ export const collections = [
     description: 'Speak with our team for sizing, design guidance, and order support.',
     image: '/images/gold-set-2.jpg',
     relatedImages: [
-      '/images/gold-set-2.jpg',
-      '/images/gold-set-3.jpg',
-      '/images/Ring-5.jpg',
-      '/images/earing-5.jpg',
+      {
+        src: '/images/gold-set-2.jpg',
+        title: 'Custom Gold Set Reference',
+        detail: 'Use this style as a starting point for set size and finish discussion.',
+      },
+      {
+        src: '/images/gold-set-3.jpg',
+        title: 'Occasion Set Reference',
+        detail: 'A richer reference design for ceremony or gift orders.',
+      },
+      {
+        src: '/images/Ring-5.jpg',
+        title: 'Custom Ring Reference',
+        detail: 'Useful for discussing ring shape, size, and detail preference.',
+      },
+      {
+        src: '/images/earing-5.jpg',
+        title: 'Custom Earring Reference',
+        detail: 'Reference pair for earring size, weight, and styling requests.',
+      },
     ],
   },
 ];
@@ -66,11 +125,26 @@ export const gemCollections = [
     description: 'Rich red ruby pieces for statement gifts, ceremonies, and heirloom looks.',
     image: '/images/Ruby-1.jpg',
     relatedImages: [
-      '/images/Ruby-1.jpg',
-      '/images/Ruby-2.jpg',
-      '/images/Ruby-3.jpg',
-      '/images/Ruby-4.jpg',
-      '/images/Ruby-5.jpg',
+      {
+        src: '/images/Ruby-1.jpg',
+        title: 'Royal Ruby Highlight',
+        detail: 'Deep red gemstone look with a luxurious gold presentation.',
+      },
+      {
+        src: '/images/Ruby-2.jpg',
+        title: 'Classic Ruby Design',
+        detail: 'Traditional ruby tone for customers who prefer a timeless look.',
+      },
+      {
+        src: '/images/Ruby-3.jpg',
+        title: 'Ruby Statement Piece',
+        detail: 'Bold red detail designed to stand out in formal styling.',
+      },
+      {
+        src: '/images/Ruby-4.jpg',
+        title: 'Ruby Gift Selection',
+        detail: 'Warm ruby color suited for meaningful gifts and celebrations.',
+      },
     ],
   },
   {
@@ -80,14 +154,26 @@ export const gemCollections = [
     description: 'Elegant sapphire-inspired designs with deep color and refined gold settings.',
     image: '/images/Sapphire-1.jpg',
     relatedImages: [
-      '/images/Sapphire-1.jpg',
-      '/images/Sapphire-2.jpg',
-      '/images/Sapphire-3.jpg',
-      '/images/Sapphire-4.jpg',
-      '/images/Sapphire-5.jpg',
-      '/images/Sapphire-6.jpg',
-      '/images/Sapphire-7.jpg',
-      '/images/Sapphire-8.jpg',
+      {
+        src: '/images/Sapphire-1.jpg',
+        title: 'Deep Sapphire Piece',
+        detail: 'Rich blue gemstone look with a calm, elegant character.',
+      },
+      {
+        src: '/images/Sapphire-2.jpg',
+        title: 'Royal Blue Accent',
+        detail: 'Sapphire-inspired accent suited for refined formal wear.',
+      },
+      {
+        src: '/images/Sapphire-3.jpg',
+        title: 'Sapphire Gift Piece',
+        detail: 'Graceful blue tone for anniversary, birthday, or ceremony gifting.',
+      },
+      {
+        src: '/images/Sapphire-4.jpg',
+        title: 'Classic Sapphire Style',
+        detail: 'Timeless gemstone styling with a polished gold setting.',
+      },
     ],
   },
   {
@@ -97,19 +183,26 @@ export const gemCollections = [
     description: 'Fresh green gemstone styles for customers who prefer a graceful classic finish.',
     image: '/images/Emerald-1.jpg',
     relatedImages: [
-      '/images/Emerald-1.jpg',
-      '/images/Emerald-2.jpg',
-      '/images/Emerald-3.jpg',
-      '/images/Emerald-4.jpg',
-      '/images/Emerald-5.jpg',
-      '/images/Emerald-6.jpg',
-      '/images/Emerald-7.jpg',
-      '/images/Emerald-8.jpg',
-      '/images/Emerald-9.jpg',
-      '/images/Emerald-10.jpg',
-      '/images/Emerald-11.jpg',
-      '/images/Emerald-12.jpg',
-      '/images/Emerald-13.jpg',
+      {
+        src: '/images/Emerald-1.jpg',
+        title: 'Fresh Emerald Piece',
+        detail: 'Bright green gemstone style with clean gold detail.',
+      },
+      {
+        src: '/images/Emerald-2.jpg',
+        title: 'Emerald Grace Design',
+        detail: 'Soft green tone for customers who prefer graceful styling.',
+      },
+      {
+        src: '/images/Emerald-3.jpg',
+        title: 'Classic Emerald Accent',
+        detail: 'Traditional emerald-inspired look with balanced shine.',
+      },
+      {
+        src: '/images/Emerald-4.jpg',
+        title: 'Emerald Gift Piece',
+        detail: 'Green gemstone selection suitable for meaningful gifting.',
+      },
     ],
   },
   {
@@ -119,10 +212,26 @@ export const gemCollections = [
     description: 'Sparkling diamond and crystal-accented jewelry for special occasions.',
     image: '/images/earing-3.jpg',
     relatedImages: [
-      '/images/earing-3.jpg',
-      '/images/earing-4.jpg',
-      '/images/earing-5.jpg',
-      '/images/Ring-7.jpg',
+      {
+        src: '/images/earing-3.jpg',
+        title: 'Diamond Accent Earrings',
+        detail: 'Sparkling earring detail for formal events and gifts.',
+      },
+      {
+        src: '/images/earing-4.jpg',
+        title: 'Bright Detail Earrings',
+        detail: 'Light-catching accent with a polished gold finish.',
+      },
+      {
+        src: '/images/earing-5.jpg',
+        title: 'Elegant Diamond Detail',
+        detail: 'Refined sparkle for customers who prefer subtle luxury.',
+      },
+      {
+        src: '/images/Ring-7.jpg',
+        title: 'Spark Accent Ring',
+        detail: 'Ring design with a bright accent for a premium occasion look.',
+      },
     ],
   },
 ];
@@ -131,21 +240,21 @@ export const allCollections = [...collections, ...gemCollections];
 
 export const homeSlides = [
   {
-    image: '/images/hero.jpg',
+    image: '/images/slide-1.jpg',
     title: 'Royal Golden Princess',
     kicker: 'Fine gold and gemstone jewelry',
     description:
       'Visit our Yangon branches or call us today for jewelry details, appointments, and custom orders.',
   },
   {
-    image: '/images/gold-set-2.jpg',
+    image: '/images/slide-2.jpg',
     title: 'Elegant Gold Designs',
     kicker: 'Signature collections',
     description:
       'Discover refined gold sets, earrings, rings, bracelets, and coordinated pieces for special occasions.',
   },
   {
-    image: '/images/Ruby-2.jpg',
+    image: '/images/slide-3.jpg',
     title: 'Gemstone Highlights',
     kicker: 'Gems collections',
     description:
@@ -167,22 +276,22 @@ export const galleryImages = [
 export const newArrivals = [
   {
     name: 'Royal Gold Necklace Set',
-    price: 'Ask for price',
+    price: '',
     image: '/images/gold-set-3.jpg',
   },
   {
     name: 'Ruby Gemstone Statement Piece',
-    price: 'Ask for price',
+    price: '',
     image: '/images/Ruby-3.jpg',
   },
   {
     name: 'Golden Princess Ring',
-    price: 'Ask for price',
+    price: '',
     image: '/images/Ring-3.jpg',
   },
   {
     name: 'Sapphire Gemstone Piece',
-    price: 'Ask for price',
+    price: '',
     image: '/images/Sapphire-3.jpg',
   },
 ];
@@ -220,6 +329,54 @@ export const shopCategories = [
   },
 ];
 
+export const blogPosts = [
+  {
+    id: 'ruby-gold-occasion-style',
+    title: 'How to Style Ruby and Gold for Special Occasions',
+    excerpt:
+      'Ruby pieces bring a confident royal tone to wedding outfits, evening dresses, and meaningful gift moments.',
+    category: 'Style Guide',
+    date: 'July 2026',
+    image: '/images/Ruby-3.jpg',
+    readTime: '3 min read',
+    body: [
+      'Ruby and gold create a strong ceremony look because the warm red color feels rich, confident, and memorable. It works especially well with traditional outfits, evening dresses, and formal wedding styling.',
+      'For a balanced look, choose one main ruby piece as the focus. If the necklace is bold, keep the earrings softer. If the earrings are the statement, choose a simpler chain or ring so the whole outfit still feels elegant.',
+      'Ruby also makes a meaningful gift choice. It feels celebratory without being too trendy, so it can be worn again for anniversaries, family events, and special dinners.',
+    ],
+  },
+  {
+    id: 'choosing-gold-set',
+    title: 'Choosing the Right Gold Set for Your Ceremony',
+    excerpt:
+      'A balanced gold set should match the outfit neckline, event mood, and the level of statement you want.',
+    category: 'Buying Tips',
+    date: 'July 2026',
+    image: '/images/gold-set-3.jpg',
+    readTime: '4 min read',
+    body: [
+      'A gold set should match both the outfit and the ceremony mood. For a grand event, a richer necklace and earring combination can make the whole look feel complete. For a softer family ceremony, a lighter set may feel more graceful.',
+      'Start by checking the neckline of your outfit. Higher necklines often look better with earrings and bracelets, while open necklines give more space for a detailed necklace set.',
+      'Comfort matters too. A beautiful set should sit well, feel secure, and allow you to move naturally throughout the event. Visit the showroom to compare sizes and finishes before choosing.',
+    ],
+  },
+  {
+    id: 'gemstone-color-meaning',
+    title: 'Ruby, Sapphire, Emerald: Pick a Gem Color With Feeling',
+    excerpt:
+      'Red, blue, and green gemstones each create a different mood, from warm celebration to calm elegance.',
+    category: 'Gem Stories',
+    date: 'July 2026',
+    image: '/images/Sapphire-4.jpg',
+    readTime: '3 min read',
+    body: [
+      'Gemstone color changes the whole feeling of a jewelry look. Ruby feels warm and celebratory, sapphire feels calm and refined, and emerald feels fresh, graceful, and classic.',
+      'If you want a bold gift, ruby is a strong choice. For someone who likes quiet elegance, sapphire is easy to style with many outfits. Emerald is beautiful for customers who prefer a bright but traditional color.',
+      'There is no single correct choice. The best gemstone is the one that matches the person, the outfit, and the memory you want the jewelry to carry.',
+    ],
+  },
+];
+
 export const phones = [
   '+95 09 5074312',
   '+95 5015101',
@@ -253,10 +410,10 @@ export const socialLinks = [
 
 export const teamMembers = [
   {
-    role: 'Founder & Boss',
-    name: 'Royal Golden Princess Leadership',
+    role: 'Management Team',
+    name: 'Showroom Leadership',
     description: 'Guiding the showroom experience, product standards, and customer care.',
-    image: '/images/logo.jpg',
+    image: '/images/gold-set-1.jpg',
   },
   {
     role: 'Sales Team',
@@ -269,6 +426,71 @@ export const teamMembers = [
     name: 'Customer Support Staff',
     description: 'Available for branch visits, phone questions, and custom order guidance.',
     image: '/images/Ring-5.jpg',
+  },
+];
+
+export const aboutTimeline = [
+  {
+    year: '2015',
+    title: 'Royal Golden Princess Founded',
+    description:
+      'Started with a focus on trusted gold jewellery guidance, personal customer care, and meaningful pieces for gifts and ceremonies.',
+  },
+  {
+    year: '2016',
+    title: 'Branch 1 Opened',
+    description:
+      'Opened our North Okkalapa branch to welcome customers for gold sets, gemstone pieces, sizing support, and custom order questions.',
+  },
+  {
+    year: '2026',
+    title: 'Times City Branch Opened',
+    description:
+      'Expanded to Times City Jewelry Mall, Level 3, C-302, making it easier for more customers to visit and compare collections.',
+  },
+  {
+    year: 'Today',
+    title: 'Growing With Our Customers',
+    description:
+      'Continuing to present bright gold, ruby, sapphire, emerald, diamond-inspired, and custom-order selections for every important moment.',
+  },
+];
+
+export const aboutValues = [
+  {
+    label: 'Our Vision',
+    title: 'To be a trusted jewellery destination for elegant gold and gemstone pieces.',
+    description:
+      'We want every customer to feel confident choosing jewellery for personal wear, ceremonies, gifts, and family milestones.',
+  },
+  {
+    label: 'Our Mission',
+    title: 'To guide customers with honest service, thoughtful selection, and showroom care.',
+    description:
+      'Our team supports product comparison, sizing, branch visits, custom order conversations, and after-purchase questions with clear attention.',
+  },
+];
+
+export const policySections = [
+  {
+    title: 'Product Information',
+    description:
+      'Product photos, descriptions, prices, and availability may change. Please contact Royal Golden Princess directly to confirm details before visiting or ordering.',
+  },
+  {
+    title: 'Orders And Custom Requests',
+    description:
+      'Custom orders, sizing, and special requests are reviewed by our team. Timing, pricing, and requirements may vary by design and material.',
+  },
+  {
+    title: 'Customer Privacy',
+    description:
+      'Customer contact information is used only for order questions, showroom appointments, product support, and related communication.',
+  },
+  {
+    title: 'Social Media And External Links',
+    description:
+      'Our website links to official social media pages. External platforms have their own privacy and content policies.',
   },
 ];
 

@@ -2,14 +2,18 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import LinkButton from './components/LinkButton';
 import SiteFooter from './components/SiteFooter';
-import { allCollections } from './data/siteData';
+import { allCollections, blogPosts } from './data/siteData';
+import AdminPage from './pages/AdminPage';
 import AboutPage from './pages/AboutPage';
+import BlogDetailPage from './pages/BlogDetailPage';
+import BlogPage from './pages/BlogPage';
 import CollectionDetail from './pages/CollectionDetail';
 import CollectionsPage from './pages/CollectionsPage';
 import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
+import PolicyPage from './pages/PolicyPage';
 import './App.css';
 
 const staticRoutes = [
@@ -18,8 +22,11 @@ const staticRoutes = [
   '/collections',
   '/collections/jewellery',
   '/collections/gems',
+  '/admin',
+  '/blog',
   '/gallery',
   '/contact',
+  '/policy',
 ];
 
 function App() {
@@ -45,6 +52,7 @@ function App() {
   const selectedCollection = allCollections.find(
     (collection) => path === `/collections/${collection.id}`,
   );
+  const selectedBlogPost = blogPosts.find((post) => path === `/blog/${post.id}`);
 
   return (
     <main className="site-shell">
@@ -52,6 +60,9 @@ function App() {
 
       {path === '/' && <HomePage navigate={navigate} />}
       {path === '/about' && <AboutPage navigate={navigate} />}
+      {path === '/blog' && <BlogPage navigate={navigate} />}
+      {selectedBlogPost && <BlogDetailPage post={selectedBlogPost} navigate={navigate} />}
+      {path === '/admin' && <AdminPage />}
       {path === '/collections' && <CollectionsPage navigate={navigate} />}
       {path === '/collections/jewellery' && (
         <CollectionsPage navigate={navigate} type="jewellery" />
@@ -64,11 +75,12 @@ function App() {
       )}
       {path === '/gallery' && <GalleryPage />}
       {path === '/contact' && <ContactPage />}
-      {!staticRoutes.includes(path) && !selectedCollection && (
+      {path === '/policy' && <PolicyPage />}
+      {!staticRoutes.includes(path) && !selectedCollection && !selectedBlogPost && (
         <NotFoundPage navigate={navigate} />
       )}
 
-      <SiteFooter />
+      <SiteFooter navigate={navigate} />
 
       <LinkButton
         to="/contact"

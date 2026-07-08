@@ -4,21 +4,27 @@ import { newArrivals, shopCategories } from '../data/siteData';
 
 function HomePage({ navigate }) {
   return (
-    <>
+    <main className="home-page">
       <HomeSlider navigate={navigate} />
 
       <section className="new-arrivals" aria-label="New arrivals">
         <div className="storefront-heading">
-          <h2>New Arrivals</h2>
+          <p className="section-kicker">Fresh From The Showroom</p>
+          <h1>New Arrivals</h1>
         </div>
 
         <div className="arrival-grid">
-          {newArrivals.map((item) => (
-            <article className="arrival-card" key={item.name}>
+          {newArrivals.map((item, index) => (
+            <article className={index === 1 ? 'arrival-card spotlight-arrival' : 'arrival-card'} key={item.name}>
               <span className="new-badge">New</span>
-              <img src={item.image} alt={item.name} />
-              <h3>{item.name}</h3>
-              <p>{item.price}</p>
+              <div className="arrival-image-wrap">
+                <img src={item.image} alt={item.name} />
+              </div>
+              <div className="arrival-content">
+                <p className="arrival-type">Royal Golden Princess</p>
+                <h3>{item.name}</h3>
+                <p>{item.price}</p>
+              </div>
             </article>
           ))}
         </div>
@@ -31,10 +37,14 @@ function HomePage({ navigate }) {
       </section>
 
       <section className="secondary-hero" aria-label="Royal Golden Princess showroom highlight">
-        <img src="/images/Sapphire-2.jpg" alt="Royal Golden Princess jewelry collection" />
+        <img src="/images/slide-4.jpg" alt="Royal Golden Princess jewelry collection" />
         <div className="secondary-hero-copy">
           <p className="eyebrow">In Store Now</p>
-          <h2>Gemstone pieces with royal gold detail</h2>
+          <h2>Gemstone pieces with royal gold detail.</h2>
+          <p>
+            A bright edit of gold, ruby, sapphire, and emerald styles selected for ceremonies,
+            gifts, and standout everyday looks.
+          </p>
           <LinkButton to="/collections" navigate={navigate} className="button button-primary">
             Shop Collections
           </LinkButton>
@@ -43,6 +53,7 @@ function HomePage({ navigate }) {
 
       <section className="shop-category" aria-label="Shop by category">
         <div className="storefront-heading">
+          <p className="section-kicker">Find Your Piece</p>
           <h2>Shop by Category</h2>
         </div>
 
@@ -60,7 +71,7 @@ function HomePage({ navigate }) {
           ))}
         </div>
       </section>
-    </>
+    </main>
   );
 }
 

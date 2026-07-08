@@ -78,6 +78,9 @@ function Header({ navigate, currentPath }) {
           <LinkButton to="/gallery" navigate={navigate} isActive={currentPath === '/gallery'}>
             Gallery
           </LinkButton>
+          <LinkButton to="/blog" navigate={navigate} isActive={currentPath === '/blog'}>
+            Blog
+          </LinkButton>
           <LinkButton
             to="/contact"
             navigate={navigate}

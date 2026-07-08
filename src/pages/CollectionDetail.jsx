@@ -40,9 +40,13 @@ function CollectionDetail({ collection, navigate }) {
         </div>
 
         <div className="related-gallery-grid">
-          {collection.relatedImages.map((image) => (
-            <figure key={image}>
-              <img src={image} alt={`${collection.title} related piece`} />
+          {collection.relatedImages.map((product) => (
+            <figure key={product.src}>
+              <img src={product.src} alt={product.title} />
+              <figcaption>
+                <strong>{product.title}</strong>
+                <span>{product.detail}</span>
+              </figcaption>
             </figure>
           ))}
         </div>

@@ -1,5 +1,5 @@
 import LinkButton from '../components/LinkButton';
-import { teamMembers } from '../data/siteData';
+import { aboutTimeline, aboutValues, teamMembers } from '../data/siteData';
 
 function AboutPage({ navigate }) {
   return (
@@ -23,6 +23,47 @@ function AboutPage({ navigate }) {
         </div>
       </section>
 
+      <section className="page-section history-section">
+        <div className="history-layout">
+          <div className="history-feature">
+            <p className="section-kicker">Our History</p>
+            <h2>From one trusted showroom to two Yangon branches.</h2>
+            <p>
+              A bright journey built on customer trust, jewellery guidance, and meaningful pieces
+              for ceremonies, gifts, and family milestones.
+            </p>
+            <div className="history-feature-image">
+              <img src="/images/gold-set-3.jpg" alt="Royal Golden Princess gold jewellery" />
+            </div>
+          </div>
+
+          <div className="timeline-rail" aria-label="Royal Golden Princess history timeline">
+            {aboutTimeline.map((item, index) => (
+              <article className="timeline-card" key={`${item.year}-${item.title}`}>
+                <span className="timeline-index">{String(index + 1).padStart(2, '0')}</span>
+                <div>
+                  <span className="timeline-year">{item.year}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section vision-section">
+        <div className="vision-grid">
+          {aboutValues.map((item) => (
+            <article className="vision-card" key={item.label}>
+              <span className="contact-label">{item.label}</span>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="page-section team-section">
         <div className="section-heading">
           <p className="section-kicker">Our People</p>
@@ -38,7 +79,7 @@ function AboutPage({ navigate }) {
               <img src={member.image} alt={`${member.role} - ${member.name}`} />
               <div>
                 <span className="contact-label">{member.role}</span>
-                <h2>{member.name}</h2>
+                <h3>{member.name}</h3>
                 <p>{member.description}</p>
               </div>
             </article>
